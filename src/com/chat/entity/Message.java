@@ -18,6 +18,15 @@ public class Message {
         // JDK 17 推荐的时间格式化方式
         this.time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
+    
+    // 为系统消息提供的构造函数
+    public Message(String sender, String receiver, String content, boolean isPrivate, String time) {
+        this.sender = sender;
+        this.receiver = receiver;
+        this.content = content;
+        this.isPrivate = isPrivate;
+        this.time = time;
+    }
 
     // Getter methods
     public String getSender() { return sender; }

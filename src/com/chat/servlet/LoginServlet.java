@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
             resp.addCookie(userCookie);
 
             // 【重定向】跳转到聊天室
-            resp.sendRedirect(req.getContextPath() + "/chat.jsp");
+            resp.sendRedirect(req.getContextPath() + "/chat");
         } else {
             req.setAttribute("error", "用户名已存在，请换一个");
             req.getRequestDispatcher("/login.jsp").forward(req, resp);

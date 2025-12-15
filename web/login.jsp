@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,7 +6,7 @@
     <title>进入聊天室</title>
     <style>
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,#667eea 0%, #764ba2 100%);
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -27,7 +27,7 @@
             width: 100%;
             padding: 12px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+           border: 1px solid #ddd;
             border-radius: 6px;
             box-sizing: border-box; /* 关键：防止padding撑破宽度 */
         }
@@ -43,7 +43,7 @@
             transition: background 0.3s;
         }
         button:hover { background-color: #5a387e; }
-        .error { color: red; font-size: 14px; margin-bottom: 10px; }
+        .error {color: red; font-size: 14px; margin-bottom: 10px; }
     </style>
 </head>
 <body>

@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -42,7 +40,8 @@ public class ChatServlet extends HttpServlet {
         List<Message> visibleMessages = allMessages.stream()
                 .filter(m -> !m.isPrivate() ||
                         m.getSender().equals(currentUser) ||
-                        m.getReceiver().equals(currentUser))
+                        m.getReceiver().equals(currentUser) ||
+                        m.getSender().equals("系统")) // 系统消息对所有人都可见
                 .collect(Collectors.toList());
 
         // 简单手动构建 JSON，避免依赖第三方库（如果你没有Gson jar包）

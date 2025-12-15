@@ -21,6 +21,6 @@ public class LogoutServlet extends HttpServlet {
             }
             session.invalidate(); // 销毁 Session
         }
-        resp.sendRedirect("login.jsp");
+        resp.sendRedirect("login");
     }
 }

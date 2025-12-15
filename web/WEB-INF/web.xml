@@ -8,8 +8,8 @@
 
     <!-- 其他配置 ... -->
 
-    <!-- 访问 /homework02/ 时自动跳转 login.jsp -->
+    <!-- 访问 /homework02/ 时自动跳转 login -->
     <welcome-file-list>
-        <welcome-file>login.jsp</welcome-file>
+        <welcome-file>login</welcome-file>
     </welcome-file-list>
 </web-app>
